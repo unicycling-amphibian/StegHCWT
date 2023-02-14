@@ -263,12 +263,12 @@ return 0;
 }
 /*
 DONE:
--Reduce the number of computations: The lifting scheme based Haar wavelet transform uses two operations for each coefficient in the input: the prediction and the update. To reduce the number of computations, you can use a lifting scheme implementation that requires fewer operations, such as the 9/7 lifting scheme.
--Parallelize the computations: The lifting scheme based Haar wavelet transform can be easily parallelized, as each coefficient can be processed independently. You can use multi-threading or GPU computing to achieve this.
+-Reduce the number of computations: The lifting scheme based Haar wavelet transform uses two operations for each coefficient
+-Parallelize the computations: Haar wavelet transform coefficients can be processed independently
+-Reduce the size of the input using a video codec
 
 MAYBE:
--Reduce the size of the input: The lifting scheme based Haar wavelet transform has a time complexity of O(n), where n is the size of the input. To reduce the computation time, you can reduce the size of the input by using a video codec that compresses the video into a smaller representation or by only processing a portion of the video at a time.
--Use a more efficient data structure: The current implementation uses an array to represent the video frame. To improve the performance, you can use a more efficient data structure, such as a matrix or a linked list, to store the video frame.
+-Use a more efficient data structure
 */
 
 
